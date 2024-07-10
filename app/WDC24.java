@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wdc24.app;
 
 import java.sql.SQLException;
@@ -12,10 +7,6 @@ import wdc.pojo.DriversPojo;
 import wdc24.dao.DriversDAO;
 import wdc24.dbutil.DBConnection;
 
-/**
- *
- * @author Rafiul Bari Khan
- */
 public class WDC24 {
     static Scanner kb;
     public static void main(String[] args) {
@@ -139,19 +130,5 @@ public class WDC24 {
             System.out.println("Exception:Cannot update the rec:"+ex.getMessage());
            
         }
-    }
-
-//    private static void deleteEmp() {
-//        try{
-//            
-//            System.out.println("Enter empno whose rec is to be deleted:");
-//            int eno=kb.nextInt();
-//             boolean result=EmployeeDAO.deleteEmp(eno);
-//            System.out.println(result==true?"Record deleted":"Record not found");
-//    }catch(SQLException ex){
-//            System.out.println("Exception:Cannot delete the rec:"+ex.getMessage());
-//           
-//        }
-//    }
-    
+    }    
 }
