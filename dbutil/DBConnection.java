@@ -9,7 +9,7 @@ public class DBConnection {
     private static Connection conn;
     static{
         try{
-            conn=DriverManager.getConnection("jdbc:oracle:thin:@//DESKTOP-533TJJV:1521/xe", "user2", "abcd");
+            conn=DriverManager.getConnection("jdbc:oracle:thin:@//localhost/xe", "user2", "abcd");
             System.out.println("Connected successfully!");
         }catch(SQLException ex){
             System.out.println("Cannot connect to the DB:"+ex.getMessage());
